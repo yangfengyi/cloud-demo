@@ -23,6 +23,8 @@ specifiers:
   typescript: ^4.4.3
   workbox-cli: ^6.5.2
   workbox-precaching: ^6.5.2
+  workbox-routing: ^6.5.2
+  workbox-strategies: ^6.5.2
 
 dependencies:
   fs-extra: registry.npmmirror.com/fs-extra/10.0.1
@@ -49,6 +51,8 @@ devDependencies:
   typescript: registry.npmmirror.com/typescript/4.6.3
   workbox-cli: registry.npmmirror.com/workbox-cli/6.5.2
   workbox-precaching: registry.npmmirror.com/workbox-precaching/6.5.2
+  workbox-routing: registry.npmmirror.com/workbox-routing/6.5.2
+  workbox-strategies: registry.npmmirror.com/workbox-strategies/6.5.2
 
 packages:
 
