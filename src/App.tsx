@@ -7,7 +7,7 @@ export default function App() {
 
   useEffect(() => {
     fetch(
-      'https://odd-dust-cfe6.solojacker-worker.workers.dev/',
+      'https://cloud-worker-demo.solojacker-worker.workers.dev/',
       {
         method: 'GET'
       }
@@ -15,7 +15,7 @@ export default function App() {
     .then(res => res.json())
     .then(data => {
       console.log(data)
-      setName(data.name)
+      setName(data)
     })
   })
 
