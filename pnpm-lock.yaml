@@ -21,7 +21,10 @@ specifiers:
   react: ^18.0.0
   react-dom: ^18.0.0
   typescript: ^4.4.3
+  workbox-cacheable-response: ^6.5.2
   workbox-cli: ^6.5.2
+  workbox-core: ^6.5.2
+  workbox-expiration: ^6.5.2
   workbox-precaching: ^6.5.2
   workbox-routing: ^6.5.2
   workbox-strategies: ^6.5.2
@@ -49,7 +52,10 @@ devDependencies:
   live-server: registry.npmmirror.com/live-server/1.2.1
   prettier: registry.npmmirror.com/prettier/2.6.2
   typescript: registry.npmmirror.com/typescript/4.6.3
+  workbox-cacheable-response: registry.npmmirror.com/workbox-cacheable-response/6.5.2
   workbox-cli: registry.npmmirror.com/workbox-cli/6.5.2
+  workbox-core: registry.npmmirror.com/workbox-core/6.5.2
+  workbox-expiration: registry.npmmirror.com/workbox-expiration/6.5.2
   workbox-precaching: registry.npmmirror.com/workbox-precaching/6.5.2
   workbox-routing: registry.npmmirror.com/workbox-routing/6.5.2
   workbox-strategies: registry.npmmirror.com/workbox-strategies/6.5.2

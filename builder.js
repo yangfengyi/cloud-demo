@@ -1,6 +1,7 @@
 const { start } = require('live-server')
 const { watch } = require('chokidar')
 const { build } = require('esbuild')
+const exec = require('child_process').execSync
 const fs = require('fs-extra')
 
 const isDev = process.env.NODE_ENV !== 'production'
@@ -31,7 +32,7 @@ const buildParams = {
   entryPoints: ['src/index.tsx'],
   loader: { '.ts': 'tsx' },
   outdir: 'dist',
-  minify: !isDev,
+  minify: false,
   format: 'cjs',
   bundle: true,
   sourcemap: true,
@@ -48,6 +49,8 @@ const buildParams = {
     watch('src/**/*', { ignoreInitial: true }).on('all', () => {
       builder.rebuild()
     })
+
+    await exec('npm run build:sw');
 
     start(serverParams)
   } else {
